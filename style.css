@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid #555; */
+}
+
+body {
+  width: 100%;
+}
+
+.header-container,
+.main-container,
+.footer-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+h2 {
+  display: inline-block;
+  color: #232323;
+  font-size: 30px;
+
+  border-bottom: 1px solid #232323;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+/* ---------header------------ */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container-menu {
+  display: flex;
+}
+
+.header-container-menu p {
+  width: 100px;
+  text-align: right;
+  padding-top: 8px;
+  font-size: 14px;
+}
+
+.header-container h1 {
+  font-size: 24px;
+  color: white;
+  background-color: #232323;
+  width: 120px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+main img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ---------main----------- */
+
+.main-container-title {
+  text-align: center;
+}
+
+.main-container-About img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.main-container-About-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-container-About-content-text {
+  width: 400px;
+}
+
+.main-container-About-content-text h3 {
+  font-size: 16px;
+}
+
+.main-container-About-content-text p {
+  word-wrap: break-word;
+}
+
+.main-container-Bicycle-content {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container-Bicycle-content-block {
+  width: 32%;
+  text-align: center;
+}
+
+.main-container-Bicycle-content-block img {
+  height: 80%;
+}
+
+/*-------------footer-------------- */
+
+footer {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .header-container,
+  .main-container,
+  .footer-container {
+    width: 90%;
+  }
+
+  /* ---------header------------ */
+
+  .header-container-menu p {
+    width: 80px;
+  }
+  main img {
+    height: 300px;
+  }
+
+  /* ---------main----------- */
+  .main-container-About-content {
+    display: block;
+    text-align: center;
+  }
+
+  .main-container-About-content-text {
+    text-align: left;
+    width: 100%;
+    padding: 0 60px;
+  }
+
+  .main-container-Bicycle-content {
+    display: block;
+  }
+  .main-container-Bicycle-content-block {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .main-container-Bicycle-content-block img {
+    height: 300px;
+  }
+}
